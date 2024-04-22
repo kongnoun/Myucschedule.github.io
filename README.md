@@ -1,1 +1,1 @@
-# Myucschedule.github.io
+# MyUCschedule.github.io
