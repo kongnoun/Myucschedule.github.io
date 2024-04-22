@@ -1,0 +1,153 @@
+:root {
+    --random-colors: #ff0000, #00ff00, #0000ff; /* Add more colors as needed */
+}
+
+td:hover, th:hover {
+    box-shadow: 0 0 30px var(--random-colors);
+    opacity: 2;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Teko', sans-serif;
+}
+
+#top-header {
+    font-size: 4em;
+    font-weight: 600;
+    color: black;
+    background-color: white; 
+    border: 15px;
+    border-color: rgb(71, 200, 255);
+    border-style:outset;
+    text-align: center;
+    margin: 23px;
+}
+
+/* .logo {
+    margin-left: 50%;
+    padding: 10px;
+}
+
+.container .left .logo a img {
+    width: 100px;
+    height: 100px;
+} */
+
+ul {
+    /* this removes the dots on the list items*/
+    list-style-type: none;
+}
+
+.container .right .navbar ul {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.container .right .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+}
+
+.container .right .navbar ul li a {
+    font-size: 2em;
+    font-weight: 500;
+    color: white;   
+}
+
+.container .right .navbar ul:hover {
+    transform: scale(1.08); /* Slightly scale up the cell on hover */
+    transition: transform 0.35s ease;
+    transition-duration: 300ms;
+    color: rgb(5, 254, 254);
+    cursor: pointer;
+    
+    text-shadow: 0 0 20px white;
+    opacity: 1.2;
+}
+
+table {
+    font-size: 1.9em;
+    font-weight: 700;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: rgb(23, 191, 237);
+    margin: 30px;
+    padding: 15px 15px;
+    width: 97%;
+    text-align: center;
+    justify-content: center;
+    pointer-events: initial;
+
+}
+
+.table-1 {
+    margin: auto;
+}
+
+/* New hover effect for table cells */
+
+
+.table-1 table td th {
+    transition: transform 0.3s ease;
+}
+
+/* Smooth hover effect */
+td:hover, th:hover {
+    transform: scale(1.08); /* Slightly scale up the cell on hover */
+    transition: transform 0.35s ease;
+    transition-duration: 300ms;
+    color: white;
+    cursor: pointer;
+}
+
+td:hover, th:hover {
+    box-shadow: 0 0 20px white;
+    opacity: 1.2;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: 'Teko', sans-serif;
+        background-color: #000; /* Adjusted for better readability */
+    }
+
+    #top-header {
+        font-size: 2em; /* Smaller font size for mobile */
+        margin: 10px; /* Adjusted margin */
+    }
+
+    .container .right .navbar ul {
+        font-size: 1em; /* Smaller font size for mobile */
+    }
+
+    table {
+        font-size: 1em; /* Smaller font size for mobile */
+        width: 100%; /* Full width on mobile */
+        margin: 0; /* Remove margin */
+        padding: 0; /* Remove padding */
+    }
+
+    .table-1 {
+        margin: 0; /* Remove margin */
+    }
+
+    /* Adjust hover effects for mobile */
+    td:hover, th:hover {
+        transform: none; /* Disable scaling on hover for mobile */
+        box-shadow: none; /* Disable box-shadow on hover for mobile */
+    }
+}
